@@ -15,7 +15,7 @@
 */
 
 .page {
-  background-position: fixed;
+  background-attachment: fixed;
   min-inline-size: 320px;
   min-block-size: 100dvb;
   background-color: var(--bg-color, #000000);
@@ -28,7 +28,7 @@
 
 .header {
   display: grid;
-  margin: 100px auto;
+  margin: 102px auto;
   max-inline-size: 696px;
   background-color: var(--bg-color, #000000);
   justify-items: center;
@@ -422,6 +422,10 @@
 }
 
 @media (width <= 375px) {
+  .title {
+    margin-block-start: 120px;
+  }
+
   .save-button {
     display: grid;
     inline-size: 306px;

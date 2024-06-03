@@ -4,7 +4,7 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
-.theme-light {
+:root.theme-light {
   --bg-color: #ffffff;
   --accent-color: #000000;
   --font-weight-text: 400;
@@ -16,7 +16,19 @@
   --dark-grad: #1a1a1a;
 }
 
-@media (prefers-color-scheme: theme-dark) {
+:root.theme-dark {
+  --bg-color: #000000;
+  --accent-color: #00cc14;
+  --font-weight-text: 465;
+  --font-weight-title: 785;
+  --text-color: #00cc14;
+  --sparks-color: #ff0000;
+  --grad: #000000;
+  --light-grad: #007f0c;
+  --dark-grad: #004306;
+}
+
+@media (prefers-color-scheme: dark) {
   :root {
     --main-font: "Inter-Variable", sans-serif;
     --accent-font: "PressStart2P", sans-serif;
@@ -51,7 +63,7 @@
   }
 }
 
-@media (prefers-color-scheme: theme-light) {
+@media (prefers-color-scheme: light) {
   :root {
     --main-font: "Inter-Variable", sans-serif;
     --accent-font: "PressStart2P", sans-serif;
